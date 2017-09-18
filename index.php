@@ -111,8 +111,53 @@
                             <img class='work-exp-image' src='images/work/cornell-logo.svg' alt="Cornell University Logo">
                         </div>
                     </div>
-                </div>
+                </div> <!-- end cornell cis section wrapper -->
             </section><!-- end work-exp-wrapper-->
+            
+            <!-------------------- Web Development Section ------------------->
+            <section id='web-dev-wrapper'>
+                <div class='section-title-wrapper'>
+                    <h1 class='section-title'>Web Developement</h1>
+                </div>
+                
+                <div class='row work-section-wrapper'>
+                    <div class='col-md-6'>
+                        <figure>
+                            <a class='web-dev-thumb-wrapper' href="http://drsciavolinoday.com" target="_blank">
+                                <img class='web-dev-thumb' src='images/web-dev/drsciavolinoday.jpg' alt='drsciavolinoday.com homepage'>
+                                <div class='web-dev-thumb-overlay'>
+                                    <h3 class='thumb-overlay-text'>View Website&nearr;</h3>
+                                </div>
+                            </a>
+                            <figcaption class='thumb-caption'>Dr. Cristina Sciavolino Day, MD, LLC</figcaption>
+                        </figure>
+                    </div>
+                    
+                    <div class='col-md-6'>
+                        <figure>
+                            <a class='web-dev-thumb-wrapper'>
+                                <img class='web-dev-thumb' src='images/web-dev/sciavotech.jpg' alt='sciavotech.com homepage'>
+                                <div class='web-dev-thumb-overlay'>
+                                    <h3 class='thumb-overlay-text'>Coming Soon</h3>
+                                </div>
+                            </a>
+                            <figcaption class='thumb-caption'>SciavoTECH Research and Consultancy Services Inc.</figcaption>
+                        </figure>
+                    </div>
+                    
+                    <div class='col-md-offset-3 col-md-6'>
+                        <figure>
+                            <a class='web-dev-thumb-wrapper'>
+                                <img class='web-dev-thumb' src='images/web-dev/llenroc.jpg' alt='llenroc.org homepage'>
+                                <div class='web-dev-thumb-overlay'>
+                                    <h3 class='thumb-overlay-text'>Under Development</h3>
+                                </div>
+                            </a>
+                            <figcaption class='thumb-caption'>Cornell Delta Phi</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section> <!-- end web-dev-wrapper -->
             
         </div> <!-- end container -->
         
