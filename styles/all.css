@@ -1,0 +1,130 @@
+/* Chris Sciavolino Sept. 2017 */
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    height: 200px;
+    width: 100vw;
+    background-color: #eee;
+}
+
+/* Section Global Styles **************************/
+
+.section-title-wrapper {
+    text-align: center;
+    margin-top: 5vh;
+    margin-bottom: 20px;
+}
+
+.section-title{
+    font-size: 4em;
+    color: #4a4a4a;
+    position: relative;
+    z-index: 1;
+}
+
+.section-title:before {
+    content: "";
+    position: absolute;
+    left: 47.5%;
+    bottom: -5px;
+    height: 1px;
+    width: 5%;
+    border-bottom: 3px solid #4a4a4a;
+}
+
+.subsection-title-wrapper {
+    
+}
+
+.subsection-title {
+    font-size: 2em;
+    position: relative;
+    z-index: 1;
+}
+
+.subsection-title:before {
+    content: "";
+    position: absolute;
+    left: 95%;
+    bottom: -5px;
+    height: 1px;
+    width: 5%;
+    border-bottom: 3px solid #000;
+}
+
+.text-block {
+    font-size: 1.5em;
+    color: #4a4a4a;
+    font-family: 'Lato', 'Helvetica Neue', serif;
+}
+
+.right-align {
+    text-align: right;
+}
+
+/* Banner Styles **********************************/
+
+#banner-wrapper {
+    height: 80vh;
+}
+
+#banner-background {
+    height: 80vh;
+    width: 100vw;
+    background-color: #eee;
+    position: absolute;
+}
+
+#banner-title-wrapper {
+    position: relative;
+    top: 30vh;
+    text-align: center;
+}
+
+#banner-title {
+    margin: 0;
+    font-size: 8em;
+}
+
+#banner-subtitle {
+    
+}
+
+/* Overview Section Styles ************************/
+
+#overview-collage-wrapper {
+    position: absolute;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.overview-image {
+    width: 250px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+#overview-image-1 {
+    float: left;
+}
+
+#overview-image-2 {
+    float: right;
+    top: -150px;
+}
+
+#overview-image-3 {
+    top: -250px;
+}
+
+#overview-text-wrapper {
+    text-align: left;
+    padding-top: 50px;
+}
+
