@@ -11,6 +11,18 @@ footer {
     background-color: #eee;
 }
 
+.left-align {
+    text-align: left;
+}
+
+.right-align {
+    text-align: right;
+}
+
+.centered {
+    text-align: center;
+}
+
 /* Section Global Styles **************************/
 
 .section-title-wrapper {
@@ -42,28 +54,59 @@ footer {
 
 .subsection-title {
     font-size: 2em;
+    color: #4a4a4a;
+    font-family: 'Lato', 'Helvetica Neue', serif;
+    font-weight: 400;
     position: relative;
     z-index: 1;
+    margin: 0;
+    margin-bottom: 5px;
 }
 
-.subsection-title:before {
-    content: "";
+.subsection-title-divider {
+    height: 2px;
+    border-bottom: 2px solid #979797;
     position: absolute;
-    left: 95%;
-    bottom: -5px;
-    height: 1px;
-    width: 5%;
-    border-bottom: 3px solid #000;
+    bottom: -10px;
+    width: 10%;
+    top: 8vh;
+}
+
+.right-divider {
+    left: 90%;
+    margin-left: -15px;
+}
+
+.subsection-text-wrapper {
+    margin-top: 20px;
 }
 
 .text-block {
     font-size: 1.5em;
     color: #4a4a4a;
     font-family: 'Lato', 'Helvetica Neue', serif;
+    font-weight: 300;
+    margin-bottom: 20px;
 }
 
-.right-align {
-    text-align: right;
+.ext-button {
+    color: #4a4a4a;
+    font-size: 1.25em;
+    font-family: 'Lato', 'Helvetica Neue', serif;
+    font-weight: 300;
+    text-align: center;
+    border: 1px #979797 solid;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+.ext-button:hover {
+    color: #ffffff;
+    background-color: #6C92BF;
+    border: 1px #6C92BF solid;
+    text-decoration: none;
+    transition: 0.4s;
+    cursor: pointer;
 }
 
 /* Banner Styles **********************************/
@@ -128,3 +171,44 @@ footer {
     padding-top: 50px;
 }
 
+/* Work Experience Styles **************************/
+
+#work-exp-wrapper {
+    margin-top: 200px;
+}
+
+.work-section-wrapper {
+    margin-top: 50px;
+}
+
+#redroute-icon-wrapper {
+    
+}
+
+.work-exp-image {
+    width: 100%;
+}
+
+#cornell-logo-wrapper {
+    text-align: right;
+}
+
+#ta-experience-wrapper {
+    text-align: center;
+}
+
+.ta-experience-header {
+    font-family: 'Lato', 'Helvetica Neue', serif;
+    font-weight: 400;
+    margin: 0;
+    font-size: 1.15em;
+}
+
+.ta-experience-subheader {
+    font-family: 'Lato', 'Helvetica Neue', serif;
+    font-weight: 300;
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-size: 1.15em;
+}
