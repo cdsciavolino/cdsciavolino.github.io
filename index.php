@@ -159,6 +159,90 @@
                 </div>
             </section> <!-- end web-dev-wrapper -->
             
+            <!------------------ Projects Section ------------------------->
+            <section id='projects-wrapper'>
+                <div class='section-title-wrapper'>
+                    <h1 class='section-title'>Projects of Interest</h1>
+                </div>
+                
+                <div class='row work-section-wrapper'>
+                    <div class='col-md-4'>
+                        <img class='work-exp-image' src='images/projects/stratego-gameplay.jpg' alt='Stratego gameplay'>
+                    </div>
+
+                    <div class='col-md-offset-1 col-md-7'>
+                        <div class='subsection-title-wrapper right-align'>
+                            <h1 class='subsection-title'>Terminal-based Stratego</h1>
+                            <div class='subsection-title-divider single-title-divider right-divider'></div>
+                        </div>
+                        <div class='subsection-text-wrapper'>
+                            <p class='text-block right-align'>
+                                Over the summer of 2017, I worked with a development team on a call taking service for taxi dispatchers. The goal is to replace human call taking with an interactive voice response (IVR) system capable of understanding customer speech and converting calls into actionable requests dispatchers can satisfy. Two of the largest strides the company made during the summer was improved UX design (keeping interactions succinct) and accuracy (processing correct locations).
+                            </p>
+                            <div class='centered'>
+                                <a class='ext-button'>View Github</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- end stratego section -->
+                
+                <div class='row work-section-wrapper'>
+                    <div class='col-md-6'>
+                        <div class='subsection-title-wrapper left-align'>
+                            <h1 class='subsection-title'>Cornell Daily Sun iOS App</h1>
+                            <div class='subsection-title-divider single-title-divider left-divider'></div>
+                        </div>
+                        
+                        <div class='subsection-text-wrapper'>
+                            <p class='text-block left-align'>
+                                Over the summer of 2017, I worked with a development team on a call taking service for taxi dispatchers. The goal is to replace human call taking with an interactive voice response (IVR) system capable of understanding customer speech and converting calls into actionable requests dispatchers can satisfy. Two of the largest strides the company made during the summer was improved UX design (keeping interactions succinct) and accuracy (processing correct locations).
+                            </p>
+                            <div class='centered'>
+                                <a class='ext-button'>View Github</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-md-6'>
+                        <div class='row'>
+                            <div id='daily-sun-image-wrapper'>
+                                <div class='col-md-6'>
+                                    <img id='sun-image-1' class='daily-sun-image' src="images/projects/settings.jpg" alt='Daily Sun App Settings Screen'>
+                                </div>
+                                <div class='col-md-6'>
+                                    <img id='sun-image-2' class='daily-sun-image' src="images/projects/bookmarks.jpg" alt='Daily Sun App Bookmark Screen'>
+                                </div>
+                                <div class='col-md-offset-2 col-md-8'>
+                                    <img id='sun-image-3' class='col-md-offset-1 col-md-4 daily-sun-image' src="images/projects/news.jpg" alt='Daily Sun App News feed Screen'>
+                                </div>
+                            </div> <!-- end daily sun image wrapper -->
+                        </div>
+                    </div>
+                </div> <!-- end cornell daily sun section-->
+                
+                <div class='row space-top'>
+                    <div class='col-md-4'>
+                        <img id="coffee-note-icon" class='work-exp-image' src='images/projects/coffeenote.svg' alt='Coffee Note app icon'>
+                    </div>
+                    
+                    <div class='col-md-offset-1 col-md-7'>
+                        <div class='subsection-title-wrapper right-align'>
+                            <h1 class='subsection-title'>Coffee Note (Noted)</h1>
+                            <div class='subsection-title-divider single-title-divider right-divider'></div>
+                        </div>
+                        
+                        <div class='subsection-text-wrapper'>
+                            <p class='text-block right-align'>
+                                Over the summer of 2017, I worked with a development team on a call taking service for taxi dispatchers. The goal is to replace human call taking with an interactive voice response (IVR) system capable of understanding customer speech and converting calls into actionable requests dispatchers can satisfy. Two of the largest strides the company made during the summer was improved UX design (keeping interactions succinct) and accuracy (processing correct locations).
+                            </p>
+                            
+                            <div class='centered'>
+                                <a class='ext-button'>View Github</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- end Coffee Note App section -->
+            </section> <!-- end projects-wrapper -->
+            
         </div> <!-- end container -->
         
         <footer>
