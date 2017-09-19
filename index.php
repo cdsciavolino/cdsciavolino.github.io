@@ -243,10 +243,33 @@
                 </div> <!-- end Coffee Note App section -->
             </section> <!-- end projects-wrapper -->
             
+            <section id='contact-wrapper'>
+                <div class='section-title-wrapper'>
+                    <h1 class='section-title'>Contact</h1>
+                </div>
+                
+                <div class='row work-section-wrapper'>
+                    <form method='post' id='contact-form'>
+                        <input class='col-xs-12 col-md-offset-1 col-md-4 text-input' type='text' name='name' placeholder='Name *' value required>
+                        <input class='col-xs-12 col-md-offset-1 col-md-5 text-input' type='email' name='email' placeholder='Email *' value required>
+                        <input class='col-xs-12 col-md-offset-1 col-md-4 text-input' type="tel" name='phone' placeholder='Phone' value>
+                        <input class='col-xs-12 col-md-offset-1 col-md-5 text-input' type="text" name='subject' placeholder="Subject *" value required>
+                        <textarea class='col-xs-12 col-md-offset-1 col-md-10 message-input' name='message' placeholder="Write your message here...*" required></textarea>                            
+                        <input class='col-xs-12 col-md-offset-4 col-md-4 submit-input' type='submit' name='submit' value='Send Message'>
+                    </form>
+                </div>
+            </section>
+            
         </div> <!-- end container -->
         
         <footer>
-        
+            <div class='container'>
+                <div class='row'>
+                    <div class="col-md-offset-1 col-md-10">
+                        <p id='copyright'>Copyright &copy; Chris Sciavolino &bull; All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
         </footer>
     </body>
 </html>

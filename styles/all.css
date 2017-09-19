@@ -5,12 +5,6 @@ html, body {
     padding: 0;
 }
 
-footer {
-    height: 200px;
-    width: 100vw;
-    background-color: #eee;
-}
-
 .left-align {
     text-align: left;
 }
@@ -208,6 +202,7 @@ footer {
 .ta-experience-header {
     font-family: 'Lato', 'Helvetica Neue', serif;
     font-weight: 400;
+    color: #4a4a4a;
     margin: 0;
     font-size: 1.15em;
 }
@@ -314,3 +309,133 @@ footer {
 
 /* Contact Form Styles *************************************/
 
+#contact-form {
+
+}
+
+.text-input {
+    color: #4a4a4a;
+    font-size: 1.25em;
+    font-family: 'Lato', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    border: none;
+    border-bottom: solid 1px #979797;
+    margin-top: 30px;
+}
+
+.text-input:focus {
+    outline: none;
+}
+
+.message-input {
+    color: #4a4a4a;
+    resize: none;
+    height: 200px;
+    margin-top: 30px;
+    border: none;
+    font-size: 1.25em;
+    font-family: 'Lato', 'Helvetica Neue', serif;
+    font-weight: 300;
+    border-bottom: solid 1px #979797;
+}
+
+.message-input:focus {
+    outline: none;
+}
+
+.submit-input {
+    font-size: 1.25em;
+    font-family: 'Lato', 'Helvetica Neue', serif;
+    font-weight: 300;
+    height: 40px;
+    margin-top: 30px;
+    background-color: #fff;
+    color: #4a4a4a;
+    border: solid 1px #979797;
+}
+
+.submit-input:hover {
+    transition: 0.4s;
+    font-family: 'Lato', 'Helvetica Neue', serif;
+    font-weight: 300;
+    color: #fff;
+    background-color: #6c92bf;  
+    border: solid 1px #6c92bf;
+}
+
+/* Footer Styles *******************************************/
+
+footer {
+    height: 150px;
+    width: 100vw;
+    background-color: #eee;
+    margin-top: 75px;
+}
+
+#copyright {
+    text-align: center;
+    font-family: 'Lato', 'Helvetica Neue', serif;
+    font-weight: 300;
+    color: #4a4a4a;
+    margin-top: 100px;
+    
+}
+
+/* Preloading Styles ***************************************/
+
+#preloading-wrapper {
+    background: rgba(136, 169, 207, 0.75);
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.sphere {
+    height: 350px;
+    width: 350px;
+    background: linear-gradient(rgba(102, 140, 184, 1), rgba(220, 237, 255, 1));
+    border-radius: 210px;
+    position: relative;
+}
+
+#sphere-1 {
+    left: -131px;
+    top: -114px;
+}
+
+#sphere-2 {
+    transform: rotate(26deg);
+    left: 22vw;
+    top: -25vh;
+}
+
+#sphere-3 {
+    transform: rotate(286deg);
+    left: 80vw;
+    top: -75vh;
+}
+
+#sphere-4 {
+    transform: rotate(212deg);
+    left: 70vw;
+    top: -60vh;
+}
+
+#sphere-5 {
+    transform: rotate(13deg);
+    left: 5vw;
+    top: -90vh;
+}
+
+#sphere-6 {
+    transform: rotate(-120deg);
+    left: 30vw;
+    top: -95vh;
+}
+
+#sphere-7 {
+    transform: rotate(100deg);
+    left: 50vw;
+    top: -240vh;
+}
