@@ -39,11 +39,11 @@ html, body {
 .section-title:before {
     content: "";
     position: absolute;
-    left: 47.5%;
-    bottom: -5px;
-    height: 1px;
-    width: 5%;
-    border-bottom: 3px solid #979797;
+    left: 45%;
+    bottom: -20px;
+    height: 2px;
+    width: 10%;
+    border-bottom: 4px solid #979797;
 }
 
 .subsection-title-wrapper {
@@ -120,7 +120,7 @@ html, body {
 #banner-background {
     height: 80vh;
     width: 100vw;
-    background-color: #eee;
+    background-color: #cfd7e2;
     position: absolute;
 }
 
@@ -133,10 +133,27 @@ html, body {
 #banner-title {
     margin: 0;
     font-size: 8em;
+    color: #4a4a4a;
+}
+
+#banner-buttons {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#banner-buttons .ext-button {
+    margin-left: 10px;
+    margin-right: 10px;
+    border-color: #4a4a4a;
+}
+
+#banner-buttons .ext-button:hover {
+    border-color: #6C92BF;
 }
 
 #banner-subtitle {
-    
+    color: #4a4a4a;
 }
 
 /* Overview Section Styles ************************/
@@ -180,7 +197,8 @@ html, body {
 }
 
 .work-section-wrapper {
-    margin-top: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 #redroute-icon-wrapper {
@@ -235,7 +253,7 @@ html, body {
 
 .web-dev-thumb-wrapper:hover .web-dev-thumb-overlay {
     opacity: 1;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.8);
 }
 
 .web-dev-thumb-wrapper:hover .thumb-overlay-text {
@@ -259,7 +277,7 @@ html, body {
 .thumb-overlay-text {
     text-align: center;
     opacity: 0;
-    padding-top: 20%;
+    padding-top: 23%;
     font-size: 3em;
     font-family: "Lato", "Helvetica Neue", serif;
     font-weight: 400;
@@ -368,7 +386,7 @@ html, body {
 footer {
     height: 150px;
     width: 100vw;
-    background-color: #eee;
+    background-color: #cad7e8;
     margin-top: 75px;
 }
 
@@ -385,7 +403,7 @@ footer {
 
 #preloading-wrapper {
     background: rgba(136, 169, 207, 0.75);
-    position: absolute;
+    position: relative;
     height: 100vh;
     width: 100vw;
     overflow: hidden;
@@ -396,46 +414,64 @@ footer {
     width: 350px;
     background: linear-gradient(rgba(102, 140, 184, 1), rgba(220, 237, 255, 1));
     border-radius: 210px;
-    position: relative;
+    position: absolute;
 }
 
 #sphere-1 {
-    left: -131px;
-    top: -114px;
+    left: -5vw;
+    top: -10vh;
 }
 
 #sphere-2 {
     transform: rotate(26deg);
     left: 22vw;
-    top: -25vh;
+    top: 8vh;
 }
 
 #sphere-3 {
     transform: rotate(286deg);
     left: 80vw;
-    top: -75vh;
+    top: -5vh;
 }
 
 #sphere-4 {
     transform: rotate(212deg);
-    left: 70vw;
-    top: -60vh;
+    left: 65vw;
+    top: 40vh;
 }
 
 #sphere-5 {
     transform: rotate(13deg);
     left: 5vw;
-    top: -90vh;
+    top: 50vh;
 }
 
 #sphere-6 {
     transform: rotate(-120deg);
     left: 30vw;
-    top: -95vh;
+    top: 90vh;
 }
 
 #sphere-7 {
     transform: rotate(100deg);
-    left: 50vw;
-    top: -240vh;
+    left: 80vw;
+    top: 80vh;
+}
+
+#loader-wrapper {
+    top: 40vh;
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+#loading-text {
+    top: 45vh;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    font-size: 2em;
+    font-family: 'Lato', 'Helvetica Neue', serif;
+    font-weight: 300;
+    color: #4a4a4a;
 }

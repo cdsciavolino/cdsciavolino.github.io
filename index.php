@@ -23,7 +23,10 @@
             <div id="banner-background"></div>
             <div id="banner-title-wrapper">
                 <h1 id="banner-title">Welcome.</h1>
-                <h3 id="banner-subtitle">Subtitle</h3>
+                <div id='banner-buttons'>
+                    <a class='ext-button'>Resume</a>
+                    <a class='ext-button'>Contact Me</a>
+                </div>
             </div>
         </section> <!-- end banner-wrapper -->
         
@@ -34,7 +37,7 @@
                     <h1 class="section-title">Overview</h1>
                 </div>
 
-                <div class="row">
+                <div class="row work-section-wrapper">
                     <div class="col-md-5">
                         <div class="row">
                             <div id='overview-collage-wrapper'>
@@ -47,10 +50,10 @@
                     
                     <div id='overview-text-wrapper' class='col-md-offset-1 col-md-6'>
                         <p class='text-block'>
-                            I am Chris Sciavolino, a sophomore Computer Science major at Cornell University. I've been programming since my sophomore year of high school, loving it ever since. Although I've only taken formal classes in Java, Python, and OCaml, I also know Swift through a supplementary course and practice on my own time.
+                            I am Chris Sciavolino, a junior at Cornell University majoring in Computer Science with a minor in business. I’ve been programming since my sophomore year of high school, loving it ever since. Over the past five years, I’ve explored various sectors of computer science from iOS app development to full-stack web development to interactive voice response systems for taxi dispatching.
                         </p>
                         <p class='text-block'>
-                            I am currently seeking full-time internship opportunities during the summer of 2018.
+                            I am currently seeking full-time internship opportunities for the summer of 2018.
                         </p>
                         <div class='centered'>
                             <a class='ext-button'>Resume</a>
@@ -117,7 +120,7 @@
             <!-------------------- Web Development Section ------------------->
             <section id='web-dev-wrapper'>
                 <div class='section-title-wrapper'>
-                    <h1 class='section-title'>Web Developement</h1>
+                    <h1 class='section-title'>Web Development</h1>
                 </div>
                 
                 <div class='row work-section-wrapper'>
@@ -150,7 +153,7 @@
                             <a class='web-dev-thumb-wrapper'>
                                 <img class='web-dev-thumb' src='images/web-dev/llenroc.jpg' alt='llenroc.org homepage'>
                                 <div class='web-dev-thumb-overlay'>
-                                    <h3 class='thumb-overlay-text'>Under Development</h3>
+                                    <h3 class='thumb-overlay-text'>Coming Soon</h3>
                                 </div>
                             </a>
                             <figcaption class='thumb-caption'>Cornell Delta Phi</figcaption>
@@ -177,7 +180,7 @@
                         </div>
                         <div class='subsection-text-wrapper'>
                             <p class='text-block right-align'>
-                                Over the summer of 2017, I worked with a development team on a call taking service for taxi dispatchers. The goal is to replace human call taking with an interactive voice response (IVR) system capable of understanding customer speech and converting calls into actionable requests dispatchers can satisfy. Two of the largest strides the company made during the summer was improved UX design (keeping interactions succinct) and accuracy (processing correct locations).
+                                As a final project for my functional programming class, I worked with 3 other teammates to create a Terminal-based version of the game Stratego. In a timeframe of 9 days, we fully developed the logic behind the game, an ASCII visualization of the board to be displayed to the user, and a x-y coordinate movement scheme for the user to move pieces. We also included a simple bot using a minimax algorithm and probabilistic modeling to pick its moves for the user to play against.
                             </p>
                             <div class='centered'>
                                 <a class='ext-button'>View Github</a>
@@ -195,7 +198,7 @@
                         
                         <div class='subsection-text-wrapper'>
                             <p class='text-block left-align'>
-                                Over the summer of 2017, I worked with a development team on a call taking service for taxi dispatchers. The goal is to replace human call taking with an interactive voice response (IVR) system capable of understanding customer speech and converting calls into actionable requests dispatchers can satisfy. Two of the largest strides the company made during the summer was improved UX design (keeping interactions succinct) and accuracy (processing correct locations).
+                                The spring of my sophomore year, a group of developers and designers had a vision to make Cornell’s newspaper, the Cornell Daily Sun, available on an iOS app. For the past six months, we’ve been hard at work exploring design fidelities, possible features, and necessary frameworks for building this app. Our app interfaces with a Wordpress backend to retrieve articles from the Cornell Daily Sun’s website and subsequently populates a collection view. 
                             </p>
                             <div class='centered'>
                                 <a class='ext-button'>View Github</a>
@@ -232,7 +235,7 @@
                         
                         <div class='subsection-text-wrapper'>
                             <p class='text-block right-align'>
-                                Over the summer of 2017, I worked with a development team on a call taking service for taxi dispatchers. The goal is to replace human call taking with an interactive voice response (IVR) system capable of understanding customer speech and converting calls into actionable requests dispatchers can satisfy. Two of the largest strides the company made during the summer was improved UX design (keeping interactions succinct) and accuracy (processing correct locations).
+                                My freshman year, I took an introduction to iOS development course hosted by a local project team. For my final project, I aspired to create a new type of calendar app where each day would hold a simple text note rather than adding events. After the end of the class, I continued developing the app idea, incorporating Core Data and a couple color schemes. I ended up making an MVP that I used as my personal calendar app for organizing my homework and meeting schedules every day. 
                             </p>
                             
                             <div class='centered'>
@@ -243,9 +246,10 @@
                 </div> <!-- end Coffee Note App section -->
             </section> <!-- end projects-wrapper -->
             
+<!--
             <section id='contact-wrapper'>
                 <div class='section-title-wrapper'>
-                    <h1 class='section-title'>Contact</h1>
+                    <h1 class='section-title'>Contact Me</h1>
                 </div>
                 
                 <div class='row work-section-wrapper'>
@@ -259,11 +263,18 @@
                     </form>
                 </div>
             </section>
+-->
             
         </div> <!-- end container -->
         
         <footer>
             <div class='container'>
+                <div class='row'>
+                    <div class='col-md-6'>
+                        <a>Hello</a>
+                        <a>World</a>
+                    </div>
+                </div>
                 <div class='row'>
                     <div class="col-md-offset-1 col-md-10">
                         <p id='copyright'>Copyright &copy; Chris Sciavolino &bull; All Rights Reserved</p>
