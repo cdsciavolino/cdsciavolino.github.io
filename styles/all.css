@@ -111,6 +111,11 @@ html, body {
     cursor: pointer;
 }
 
+.ext-button:focus {
+    text-decoration: none;
+    color: #4a4a4a;
+}
+
 /* Banner Styles **********************************/
 
 #banner-wrapper {
@@ -122,6 +127,14 @@ html, body {
     width: 100vw;
     background-color: #cfd7e2;
     position: absolute;
+}
+
+#preloading-banner-wrapper {
+    background: rgba(136, 169, 207, 0.75);
+    position: relative;
+    height: 80vh;
+    width: 100vw;
+    overflow: hidden;
 }
 
 #banner-title-wrapper {
@@ -390,12 +403,69 @@ footer {
     margin-top: 75px;
 }
 
+#social-row {
+    margin-top: 10px;
+}
+
+.social-icon {
+    width: 64px;
+    height: 64px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 0;
+}
+
+.social-icon:hover {
+    text-decoration: none;
+}
+
+.social-icon:focus {
+    text-decoration: none;
+}
+
+.social-icon-img {
+    margin: 0;
+    padding: 5px;
+    width: 64px;
+    height: 64px;
+    transition: 0.2s;
+}
+
+.social-icon-img:hover {
+    padding: 0;
+    cursor: pointer;
+}
+
+#contact-row {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.contact-header {
+    font-family: Lato, 'Helvetica Neue', serif;
+    font-weight: 400;
+}
+
+.mail-link {
+    color: #4a4a4a;
+    border-bottom: 1px dashed #4a4a4a;
+    font-family: Lato, 'Helvetica Neue', serif;
+    font-weight: 300;
+    transition: 0.3s;
+}
+
+.mail-link:hover {
+    text-decoration: none;
+    color: #888;
+    border-bottom: 1px dashed #888;
+}
+
 #copyright {
     text-align: center;
     font-family: 'Lato', 'Helvetica Neue', serif;
     font-weight: 300;
     color: #4a4a4a;
-    margin-top: 100px;
+    margin-top: 35px;
     
 }
 

@@ -16,19 +16,25 @@
         
         <!-- Bootstrap JS -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        
+        <script src="scripts/main.js"></script>
     </head>
     <body>
         <!--------------------- Banner Section -------------------------->
-        <section id='banner-wrapper'>
-            <div id="banner-background"></div>
+        <section id='preloading-banner-wrapper'>
+            <div id='sphere-1' class='sphere'></div>
+            <div id='sphere-2' class='sphere'></div>
+            <div id='sphere-3' class='sphere'></div>
+            <div id='sphere-4' class='sphere'></div>
+            <div id='sphere-5' class='sphere'></div>
             <div id="banner-title-wrapper">
                 <h1 id="banner-title">Welcome.</h1>
                 <div id='banner-buttons'>
-                    <a class='ext-button'>Resume</a>
-                    <a class='ext-button'>Contact Me</a>
+                    <a class='ext-button' target="_blank" href='assets/ChrisSciavolinoResume.pdf'>Resume</a>
+                    <a class='ext-button' href='mailto:cds253@cornell.edu?Subject=[Web Inquiry]'>Contact Me</a>
                 </div>
             </div>
-        </section> <!-- end banner-wrapper -->
+        </section>        
         
         <div class="container">
             <!--------------------- Overview Section ------------------------>
@@ -56,7 +62,7 @@
                             I am currently seeking full-time internship opportunities for the summer of 2018.
                         </p>
                         <div class='centered'>
-                            <a class='ext-button'>Resume</a>
+                            <a class='ext-button' target="_blank" href='assets/ChrisSciavolinoResume.pdf'>Resume</a>
                         </div>
                     </div>
                 </div> <!-- end overview row -->
@@ -183,7 +189,7 @@
                                 As a final project for my functional programming class, I worked with 3 other teammates to create a Terminal-based version of the game Stratego. In a timeframe of 9 days, we fully developed the logic behind the game, an ASCII visualization of the board to be displayed to the user, and a x-y coordinate movement scheme for the user to move pieces. We also included a simple bot using a minimax algorithm and probabilistic modeling to pick its moves for the user to play against.
                             </p>
                             <div class='centered'>
-                                <a class='ext-button'>View Github</a>
+                                <a class='ext-button' target="_blank" href='https://github.com/cdsciavolino/Stratego'>View Github</a>
                             </div>
                         </div>
                     </div>
@@ -201,7 +207,7 @@
                                 The spring of my sophomore year, a group of developers and designers had a vision to make Cornell’s newspaper, the Cornell Daily Sun, available on an iOS app. For the past six months, we’ve been hard at work exploring design fidelities, possible features, and necessary frameworks for building this app. Our app interfaces with a Wordpress backend to retrieve articles from the Cornell Daily Sun’s website and subsequently populates a collection view. 
                             </p>
                             <div class='centered'>
-                                <a class='ext-button'>View Github</a>
+                                <a class='ext-button' target="_blank" href='https://github.com/cornell-sun/sun-ios'>View Github</a>
                             </div>
                         </div>
                     </div>
@@ -239,7 +245,7 @@
                             </p>
                             
                             <div class='centered'>
-                                <a class='ext-button'>View Github</a>
+                                <a class='ext-button' target="_blank" href='https://github.com/cdsciavolino/CoffeeNote'>View Github</a>
                             </div>
                         </div>
                     </div>
@@ -271,8 +277,27 @@
             <div class='container'>
                 <div class='row'>
                     <div class='col-md-6'>
-                        <a>Hello</a>
-                        <a>World</a>
+                        <div id='social-row'>
+                            <a class='social-icon' target='_blank' href='https://www.linkedin.com/in/chris-sciavolino'>
+                                <img class='social-icon-img' src='images/icons/linkedin.svg' alt='Linkedin' data-toggle='tooltip' data-placement="top" title="Linkedin">
+                            </a>
+                            <a class='social-icon' target='_blank' href='https://github.com/cdsciavolino'>
+                                <img class='social-icon-img' src='images/icons/github.svg' alt='Github' data-toggle='tooltip' data-placement="top" title="Github">
+                            </a>
+                            <a class='social-icon' target='_blank' href='assets/ChrisSciavolinoResume.pdf'>
+                                <img class='social-icon-img' src='images/icons/resume.svg' alt='Resume' data-toggle='tooltip' data-placement="top" title="Resume">
+                            </a>
+                            <a class='social-icon' href='mailto:cds253@cornell.edu?Subject=[Web Inquiry]'>
+                                <img class='social-icon-img' src='images/icons/email.svg' alt='Email' data-toggle='tooltip' data-placement="top" title="Email">
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class='col-md-6'>
+                        <div id='contact-row'>
+                            <h4 class='contact-header'>Email Address</h4>
+                            <a class='mail-link' href="mailto:cds253@cornell.edu?Subject=[Web Inquiry]">cds253@cornell.edu</a>
+                        </div>
                     </div>
                 </div>
                 <div class='row'>
@@ -280,7 +305,7 @@
                         <p id='copyright'>Copyright &copy; Chris Sciavolino &bull; All Rights Reserved</p>
                     </div>
                 </div>
-            </div>
+            </div> <!-- end container -->
         </footer>
     </body>
 </html>
