@@ -317,7 +317,7 @@
                 </div>
                 <div class='row'>
                     <div class="col-md-offset-1 col-md-10">
-                        <p id='copyright'>Copyright &copy; Chris Sciavolino &bull; All Rights Reserved</p>
+                        <p id='copyright'>Copyright &copy; Chris Sciavolino &bull; All Rights Reserved &bull; Under Active Development</p>
                     </div>
                 </div>
             </div> <!-- end container -->
