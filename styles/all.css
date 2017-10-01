@@ -631,8 +631,40 @@ footer {
         display: none;
     }
     
+    #banner-title {
+        font-size: 4em;
+    }
+    
+    #banner-buttons {
+        font-size: 1em;
+    }
+    
+    .section-title {
+        font-size: 2em;
+    }
+    
+    .subsection-title {
+        font-size: 1.5em;
+    }
+    
+    .thumb-overlay-text {
+        font-size: 1.25em;
+    }
+    
+    .text-block {
+        font-size: 1.1em;
+    }
+    
     .ext-link {
         font-size: 1.5em;
+    }
+    
+    .ta-experience-header {
+        font-size: 1em;
+    }
+    
+    .ta-experience-subheader {
+        font-size: 1em;
     }
     
     .work-section-wrapper {
@@ -664,5 +696,19 @@ footer {
     #sun-text-wrapper {
         margin-top: 10px;
         margin-bottom: 50px;
+    }
+    
+    .social-icon {
+        width: 48px;
+        height: 48px;
+    }
+    
+    .social-icon-img {
+        width: 48px;
+        height: 48px;
+    }
+    
+    #copyright {
+        font-size: 0.75em;
     }
 }
