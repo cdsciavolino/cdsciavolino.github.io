@@ -2,6 +2,8 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Christopher (Chris) Sciavolino is an aspiring software engineer, web developer, and Cornell University student. He has developed in various sectors of the computer science field, from Swift iOS development to LAMP stack webb development. He is currently seeking a full-time internship for the summer of 2018.">
         <title>Chris Sciavolino</title>
         
         <!-- Font Imports -->
@@ -39,12 +41,13 @@
         <div class="container">
             <!--------------------- Overview Section ------------------------>
             <section id="overview-wrapper">
-                <div class="section-title-wrapper">
+                <div class="section-title-wrapper hideme">
                     <h1 class="section-title">Overview</h1>
                 </div>
 
-                <div class="row work-section-wrapper">
-                    <div class="col-md-5">
+                <div class="row work-section-wrapper hideme">
+                    <div class="col-xs-offset-3 col-xs-6 col-md-offset-0 col-md-4">
+<!--
                         <div class="row">
                             <div id='overview-collage-wrapper'>
                                 <img src="images/overview/sciavolino.jpg" id="overview-image-1" class="col-md-3 overview-image" alt="Chris Headshot">
@@ -52,9 +55,13 @@
                                 <img src="images/overview/prof_pic.jpg" id="overview-image-3" class="col-md-3 overview-image" alt="Chris Headshot">
                             </div>
                         </div>
+-->
+                        <div class='headshot-wrapper'>
+                            <img src='images/overview/prof_pic.jpg' id='overview-headshot' alt='Chris Sciavolino Headshot'>
+                        </div>
                     </div>
                     
-                    <div id='overview-text-wrapper' class='col-md-offset-1 col-md-6'>
+                    <div id='overview-text-wrapper' class='col-xs-12 col-md-offset-1 col-md-7'>
                         <p class='text-block'>
                             I am Chris Sciavolino, a junior at Cornell University majoring in Computer Science with a minor in business. I’ve been programming since my sophomore year of high school, loving it ever since. Over the past five years, I’ve explored various sectors of computer science from iOS app development to full-stack web development to interactive voice response systems for taxi dispatching.
                         </p>
@@ -70,21 +77,21 @@
             
             <!------------------ Work Experience Section -------------------->
             <section id='work-exp-wrapper'>
-                <div class="section-title-wrapper">
+                <div class="section-title-wrapper hideme">
                     <h1 class="section-title">Prior Work Experience</h1>
                 </div>
                 
-                <div class="row work-section-wrapper">
-                    <div class='col-md-4'>
+                <div class="row work-section-wrapper hideme">
+                    <div class='col-xs-offset-3 col-xs-6 col-md-offset-0 col-md-4'>
                         <div id="redroute-icon-wrapper">
                             <img class='work-exp-image' src='images/work/redroute-icon.png' alt="RedRoute Inc. Icon">
                         </div>
                     </div>
-                    <div class='col-md-offset-1 col-md-7'>
+                    <div class='col-xs-12 col-md-offset-1 col-md-7'>
                         <div class='subsection-title-wrapper right-align'>
                             <h3 class='subsection-title'>Software Development Intern</h1>
                             <h3 class='subsection-title'>RedRoute Inc.</h1>
-                            <div class='subsection-title-divider right-divider'></div>
+<!--                            <div class='subsection-title-divider right-divider'></div>-->
                         </div>
                         <div class='subsection-text-wrapper'>
                             <p class='text-block right-align'>
@@ -94,12 +101,19 @@
                     </div>
                 </div> <!-- end redroute-section-wrapper -->
                 
-                <div class='row work-section-wrapper'>
-                    <div class='col-md-7'>
+                <div class='row work-section-wrapper hideme'>
+                    
+                    <div class='col-xs-offset-3 col-xs-6 col-md-push-7 col-md-offset-1 col-md-4'>
+                        <div id='cornell-logo-wrapper'>
+                            <img class='work-exp-image' src='images/work/cornell-logo.svg' alt="Cornell University Logo">
+                        </div>
+                    </div>
+
+                    <div class='col-xs-12 col-md-pull-5 col-md-7'>
                         <div class="subsection-title-wrapper left-align">
                             <h3 class='subsection-title'>Computer Science Teaching Assistant</h3>
                             <h3 class='subsection-title'>Cornell University</h3>
-                            <div class='subsection-title-divider'></div>
+<!--                            <div class='subsection-title-divider'></div>-->
                         </div>
                         
                         <div class='subsection-text-wrapper'>
@@ -114,23 +128,18 @@
                             </div>
                         </div>
                     </div>
-                    
-                    <div class='col-md-offset-1 col-md-4'>
-                        <div id='cornell-logo-wrapper'>
-                            <img class='work-exp-image' src='images/work/cornell-logo.svg' alt="Cornell University Logo">
-                        </div>
-                    </div>
+                
                 </div> <!-- end cornell cis section wrapper -->
             </section><!-- end work-exp-wrapper-->
             
             <!-------------------- Web Development Section ------------------->
             <section id='web-dev-wrapper'>
-                <div class='section-title-wrapper'>
+                <div class='section-title-wrapper hideme'>
                     <h1 class='section-title'>Web Development</h1>
                 </div>
                 
                 <div class='row work-section-wrapper'>
-                    <div class='col-md-6'>
+                    <div class='col-xs-offset-1 col-xs-10 col-md-offset-0 col-md-6 hideme'>
                         <figure>
                             <a class='web-dev-thumb-wrapper' href="http://drsciavolinoday.com" target="_blank">
                                 <img class='web-dev-thumb' src='images/web-dev/drsciavolinoday.jpg' alt='drsciavolinoday.com homepage'>
@@ -142,7 +151,7 @@
                         </figure>
                     </div>
                     
-                    <div class='col-md-6'>
+                    <div class='col-xs-offset-1 col-xs-10 col-md-offset-0 col-md-6 hideme'>
                         <figure>
                             <a class='web-dev-thumb-wrapper'>
                                 <img class='web-dev-thumb' src='images/web-dev/sciavotech.jpg' alt='sciavotech.com homepage'>
@@ -154,7 +163,7 @@
                         </figure>
                     </div>
                     
-                    <div class='col-md-offset-3 col-md-6'>
+                    <div class='col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-6 hideme'>
                         <figure>
                             <a class='web-dev-thumb-wrapper'>
                                 <img class='web-dev-thumb' src='images/web-dev/llenroc.jpg' alt='llenroc.org homepage'>
@@ -170,19 +179,19 @@
             
             <!------------------ Projects Section ------------------------->
             <section id='projects-wrapper'>
-                <div class='section-title-wrapper'>
+                <div class='section-title-wrapper hideme'>
                     <h1 class='section-title'>Projects of Interest</h1>
                 </div>
                 
-                <div class='row work-section-wrapper'>
-                    <div class='col-md-4'>
+                <div class='row work-section-wrapper hideme'>
+                    <div class='col-xs-offset-3 col-xs-6 col-md-offset-0 col-md-4'>
                         <img class='work-exp-image' src='images/projects/stratego-gameplay.jpg' alt='Stratego gameplay'>
                     </div>
 
-                    <div class='col-md-offset-1 col-md-7'>
+                    <div class='col-xs-12 col-md-offset-1 col-md-7'>
                         <div class='subsection-title-wrapper right-align'>
                             <h1 class='subsection-title'>Terminal-based Stratego</h1>
-                            <div class='subsection-title-divider single-title-divider right-divider'></div>
+<!--                            <div class='subsection-title-divider single-title-divider right-divider'></div>-->
                         </div>
                         <div class='subsection-text-wrapper'>
                             <p class='text-block right-align'>
@@ -195,23 +204,12 @@
                     </div>
                 </div> <!-- end stratego section -->
                 
-                <div class='row work-section-wrapper'>
-                    <div class='col-md-6'>
-                        <div class='subsection-title-wrapper left-align'>
-                            <h1 class='subsection-title'>Cornell Daily Sun iOS App</h1>
-                            <div class='subsection-title-divider single-title-divider left-divider'></div>
+                <div class='row work-section-wrapper hideme'>
+                    <div class='col-xs-offset-3 col-xs-6 col-md-push-7 col-md-offset-1 col-md-4'>
+                        <div id='sun-img-wrapper'>
+                            <img id='sun-img' src="images/projects/news.jpg" alt='Cornell Daily Sun News App'>
                         </div>
-                        
-                        <div class='subsection-text-wrapper'>
-                            <p class='text-block left-align'>
-                                The spring of my sophomore year, a group of developers and designers had a vision to make Cornell’s newspaper, the Cornell Daily Sun, available on an iOS app. For the past six months, we’ve been hard at work exploring design fidelities, possible features, and necessary frameworks for building this app. Our app interfaces with a Wordpress backend to retrieve articles from the Cornell Daily Sun’s website and subsequently populates a collection view. 
-                            </p>
-                            <div class='centered'>
-                                <a class='ext-button' target="_blank" href='https://github.com/cornell-sun/sun-ios'>View Github</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class='col-md-6'>
+<!--
                         <div class='row'>
                             <div id='daily-sun-image-wrapper'>
                                 <div class='col-md-6'>
@@ -223,20 +221,37 @@
                                 <div class='col-md-offset-2 col-md-8'>
                                     <img id='sun-image-3' class='col-md-offset-1 col-md-4 daily-sun-image' src="images/projects/news.jpg" alt='Daily Sun App News feed Screen'>
                                 </div>
-                            </div> <!-- end daily sun image wrapper -->
+                            </div>  end daily sun image wrapper 
+                        </div>
+-->
+                    </div>
+                    <div id='sun-text-wrapper' class='col-xs-12 col-md-pull-5 col-md-7'>
+                        <div class='subsection-title-wrapper left-align'>
+                            <h1 class='subsection-title'>Cornell Daily Sun iOS App</h1>
+<!--                            <div class='subsection-title-divider single-title-divider left-divider'></div>-->
+                        </div>
+                        
+                        <div class='subsection-text-wrapper'>
+                            <p class='text-block left-align'>
+                                The spring of my sophomore year, a group of developers and designers had a vision to make Cornell’s newspaper, the Cornell Daily Sun, available on an iOS app. For the past six months, we’ve been hard at work exploring design fidelities, possible features, and necessary frameworks for building this app. Our app interfaces with a Wordpress backend to retrieve articles from the Cornell Daily Sun’s website and subsequently populates a collection view. 
+                            </p>
+                            <div class='centered'>
+                                <a class='ext-button' target="_blank" href='https://github.com/cornell-sun/sun-ios'>View Github</a>
+                            </div>
                         </div>
                     </div>
+                    
                 </div> <!-- end cornell daily sun section-->
                 
-                <div class='row space-top'>
-                    <div class='col-md-4'>
+                <div class='row hideme'>
+                    <div class='col-xs-offset-3 col-xs-6 col-md-offset-0 col-md-4'>
                         <img id="coffee-note-icon" class='work-exp-image' src='images/projects/coffeenote.svg' alt='Coffee Note app icon'>
                     </div>
                     
-                    <div class='col-md-offset-1 col-md-7'>
+                    <div class='col-xs-12 col-md-offset-1 col-md-7'>
                         <div class='subsection-title-wrapper right-align'>
                             <h1 class='subsection-title'>Coffee Note (Noted)</h1>
-                            <div class='subsection-title-divider single-title-divider right-divider'></div>
+<!--                            <div class='subsection-title-divider single-title-divider right-divider'></div>-->
                         </div>
                         
                         <div class='subsection-text-wrapper'>
@@ -273,7 +288,7 @@
             
         </div> <!-- end container -->
         
-        <footer>
+        <footer class='hideme'>
             <div class='container'>
                 <div class='row'>
                     <div class='col-md-6'>
