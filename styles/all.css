@@ -330,6 +330,11 @@ html, body {
     
 }
 
+#spoofify-img {
+    margin-top: 100px;
+    width: 100%;
+}
+
 #sun-text-wrapper {
     margin-top: 120px;
     margin-bottom: 0;
