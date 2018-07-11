@@ -223,6 +223,10 @@ html, body {
     margin-bottom: 100px;
 }
 
+#capitalone-logo-wrapper {
+    margin-top: 25%;
+}
+
 #redroute-icon-wrapper {
     
 }
@@ -324,6 +328,11 @@ html, body {
 
 #sun-img-wrapper {
     
+}
+
+#spoofify-img {
+    margin-top: 100px;
+    width: 100%;
 }
 
 #sun-text-wrapper {
