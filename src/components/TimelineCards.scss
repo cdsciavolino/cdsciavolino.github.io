@@ -1,0 +1,14 @@
+@import '../App.scss';
+
+.timeline-cards {
+    margin-top: 20px;
+    margin-left: 20%;
+    width: 60%;
+}
+
+@include less-than-lg {
+    .timeline-cards {
+        margin-left: 5%;
+        width: 90%;
+    }
+}

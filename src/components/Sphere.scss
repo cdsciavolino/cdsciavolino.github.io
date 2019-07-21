@@ -1,0 +1,9 @@
+@import '../App.scss';
+
+.sphere {
+    height: 350px;
+    width: 350px;
+    background: linear-gradient($deep-blue, $very-light-blue);
+    border-radius: 210px;
+    position: absolute;
+}

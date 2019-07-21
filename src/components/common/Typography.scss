@@ -1,0 +1,66 @@
+@import '../../App.scss';
+
+.eyebrow-text {
+    color: $text-color;
+    font-family: $eyebrow-text-font;
+    font-weight: $eyebrow-font-weight;
+    font-size: 1em;
+}
+
+.timeline-card-title {
+    color: $text-color;
+    font-size: 1.25em;
+    font-family: $header-text-font;
+    font-weight: $header-text-weight;
+}
+
+.description-text {
+    color: $text-color;
+    font-family: $body-text-font;
+    font-weight: $body-text-font-weight;
+    font-size: 1.1em;
+}
+
+.cta-button {
+    color: $text-color;
+    font-family: $body-text-font;
+    font-weight: $body-text-font-weight;
+    margin: 5px;
+}
+
+//-- SectionTitle --
+.section-title-wrapper {
+    text-align: center;
+    margin-top: 5vh;
+    margin-bottom: 50px;
+}
+
+.section-title{
+    font-size: 4em;
+    color: $text-color;
+    font-family: $header-text-font;
+    font-weight: $header-text-weight;
+    position: relative;
+    z-index: 1;
+}
+
+.section-title:before {
+    content: "";
+    position: absolute;
+    left: 45%;
+    bottom: -20px;
+    height: 2px;
+    width: 10%;
+    border-bottom: 4px solid $light-grey;
+}
+//-- !SectionTitle --
+
+//-- SectionBody --
+.section-body {
+    font-size: 1.25em;
+    color: $text-color;
+    font-family: $body-text-font;
+    font-weight: $body-text-font-weight;
+    margin-bottom: 20px;
+}
+//-- !SectionBody --

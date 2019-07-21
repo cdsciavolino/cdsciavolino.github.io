@@ -1,0 +1,7 @@
+@import '../App.scss';
+
+@include less-than-lg {
+    .work-experience-image {
+        margin-bottom: 20px;
+    }
+}

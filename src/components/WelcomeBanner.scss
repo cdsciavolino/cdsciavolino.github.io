@@ -1,0 +1,105 @@
+@import '../App.scss';
+
+.preloading-banner-wrapper {
+    background: $light-blue-transparent;
+    position: relative;
+    min-height: 500px;
+    height: 80vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.banner-title-wrapper {
+    position: relative;
+    top: 30vh;
+    text-align: center;
+}
+
+.banner-title {
+    margin: 0;
+    font-size: 8em;
+    color: $text-color;
+    font-family: $header-text-font;
+    font-weight: $header-text-weight;
+}
+
+.banner-buttons {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: $body-text-font;
+    font-weight: $body-text-font-weight;
+}
+
+.banner-buttons .ext-button {
+    margin-left: 10px;
+    margin-right: 10px;
+    border-color: $text-color;
+}
+
+.banner-buttons .ext-button:hover {
+    border-color: $off-deep-blue;
+}
+
+.sphere1 {
+    left: -5vw;
+    top: -10vh;
+}
+
+.sphere2 {
+    transform: rotate(26deg);
+    left: 22vw;
+    top: 8vh;
+}
+
+.sphere3 {
+    transform: rotate(286deg);
+    left: 80vw;
+    top: -5vh;
+}
+
+.sphere4 {
+    transform: rotate(212deg);
+    left: 65vw;
+    top: 40vh;
+}
+
+.sphere5 {
+    transform: rotate(13deg);
+    left: 5vw;
+    top: 50vh;
+}
+
+.ext-button {
+    color: $text-color;
+    font-size: 1.25em;
+    text-align: center;
+    border: 1px $light-grey solid;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+.ext-button:hover {
+    color: #ffffff;
+    background-color: $off-deep-blue;
+    border: 1px $off-deep-blue solid;
+    text-decoration: none;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+@include less-than-lg {
+    .banner-title {
+        font-size: 5em;
+    }
+
+    .ext-button {
+        font-size: 1em;
+        padding: 5px 10px;
+    }
+}
+
+.ext-button:focus {
+    text-decoration: none;
+    color: $text-color;
+}

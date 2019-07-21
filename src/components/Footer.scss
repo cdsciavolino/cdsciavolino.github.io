@@ -1,0 +1,33 @@
+@import '../App.scss';
+
+.copyright {
+    text-align: center;
+}
+
+.footer-row {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.social-icon-img {
+    width: 50px;
+    margin: 0 5px;
+}
+
+.email-link {
+    text-decoration: none;
+    color: $text-color;
+}
+
+.email-link {
+    border-bottom: 1px solid $text-color;
+    text-decoration: none;
+    color: $text-color;
+    transition: 0.3s;
+}
+
+.email-link:hover {
+    text-decoration: none;
+    color: $light-grey;
+    border-bottom: 1px solid $light-grey;
+}

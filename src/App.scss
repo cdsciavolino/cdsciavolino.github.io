@@ -1,0 +1,39 @@
+// -- Variables --
+$light-grey: #979797;
+$dark-grey: #4a4a4a;
+$light-blue-transparent: rgba(136, 169, 207, 0.65);
+$deep-blue: rgba(102, 140, 184, 1);
+$very-light-blue: rgba(220, 237, 255, 1);
+$off-deep-blue: #6C92BF;
+
+// Fonts
+$roboto-font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+$lato-font-family: 'Lato', 'Helvetica Neue', sans-serif;
+$open-sans-font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+
+// Font Weights
+$light-font-weight: 300;
+$normal-font-weight: 400;
+$medium-font-weight: 600;
+$heavy-font-weight: 700;
+
+// Radius & Margins
+$slight-round-radius: 3px;
+
+// Usable variables
+$eyebrow-text-font: $open-sans-font-family;
+$header-text-font: $open-sans-font-family;
+$body-text-font: $open-sans-font-family;
+
+$eyebrow-font-weight: $medium-font-weight;
+$header-text-weight: $heavy-font-weight;
+$body-text-font-weight: $light-font-weight;
+
+$text-color: $dark-grey;
+//!-- Variables --
+
+// -- Mixins -- 
+@mixin less-than-lg {
+    @media (max-width: 992px) { @content; }
+}
+//!-- Mixins --
