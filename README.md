@@ -1,3 +1,9 @@
+# cdsciavolino.github.io
+React portfolio website that highlights some of my work over the last few years and how I got to where I am today.
+
+----------
+# Copied Create React App README
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
