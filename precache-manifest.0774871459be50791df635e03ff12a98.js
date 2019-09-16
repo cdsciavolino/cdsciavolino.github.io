@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "502a1f10c111c0462701af387eb060c3",
+    "revision": "138a68459ec139d2e857303e32cb84af",
     "url": "/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/css/2.4358233e.chunk.css"
   },
   {
-    "revision": "dedbf304cfc4ff0df948",
+    "revision": "d30bbfd589c52e3ea937",
     "url": "/static/css/main.9d89f4a0.chunk.css"
   },
   {
@@ -16,16 +16,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.754ac95c.chunk.js"
   },
   {
-    "revision": "dedbf304cfc4ff0df948",
-    "url": "/static/js/main.96b917b9.chunk.js"
+    "revision": "d30bbfd589c52e3ea937",
+    "url": "/static/js/main.4a12b6b4.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
     "url": "/static/js/runtime~main.a8a9905a.js"
   },
   {
-    "revision": "d8e31ca40f50e1eab187fb822ae76e3c",
-    "url": "/static/media/ChrisSciavolinoResume.d8e31ca4.pdf"
+    "revision": "78da56b4061114d66b2c489bdd6799d8",
+    "url": "/static/media/ChrisSciavolinoResume.78da56b4.pdf"
   },
   {
     "revision": "2a1a6c94fd154fff6afe235cf73ecbba",
