@@ -5,6 +5,7 @@ import ArticleClassificationImage from '../images/classifier.jpg';
 import CapitalOneLogo from '../images/capitalone-logo.svg';
 import CornellIcon from '../images/cornell-logo.svg';
 import DrSciavolinoDayWebsiteImage from '../images/drsciavolinoday.jpg';
+import PrincetonIcon from '../images/princeton-logo.svg';
 import RedRouteIcon from '../images/redroute-icon.png';
 import SciavotechWebsiteImage from '../images/sciavotech.jpg';
 import SpoofifyIcon from '../images/spoofify.png';
@@ -13,6 +14,7 @@ import SunAppImage from '../images/cornell-sun-app-icon.png';
 import YelpIcon from '../images/yelp-logo.svg';
 
 export const Seasons = {
+    FALL_2019: 'Fall 2019',
     SUMMER_2019: 'Summer 2019',
     SPRING_2019: 'Spring 2019',
     FALL_2018:  'Fall 2018',
@@ -25,6 +27,10 @@ export const Seasons = {
 };
 
 export const SeasonMeta = {
+    [Seasons.FALL_2019]: {
+        name: 'Fall 2019',
+        priority: 10,
+    },
     [Seasons.SUMMER_2019]: {
         name: 'Summer 2019',
         priority: 9,
@@ -71,6 +77,7 @@ export const EventTypes = {
 };
 
 export const EventIds = {
+    FA19_COURSES: 'fa19_courses',
     AIRBNB: 'airbnb',
     YELP: 'yelp',
     FA18_COURSES: 'fa18_courses',
@@ -90,6 +97,21 @@ export const EventIds = {
 };
 
 const allEvents = [
+    {
+        meta: {
+            id: EventIds.FA19_COURSES,
+            season: Seasons.FALL_2019,
+            tags: [],
+            type: EventTypes.COURSEWORK
+        },
+        data: {
+          courses: Courses.FALL_2019_COURSES,
+          schoolIcon: PrincetonIcon,
+          schoolName: 'Princeton University',
+          semester: Seasons.FALL_2019,
+          taPosition: ['COS 226: Data Structures and Algorithms'],
+        }
+    },
     {
         meta: {
             id: EventIds.AIRBNB,

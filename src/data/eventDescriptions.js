@@ -1,6 +1,6 @@
 export const Descriptions = {
     AIRBNB: [
-        "Over the summer of 2019, I interned on the Trip Platform, Search Intelligence team at Airbnb in San Francisco. During my time there I worked on developing a service using Java and Airflow aimed at serving datasets in-memory to internal services. Since I'm still interning and for confidentiality reasons, there will be more to come in the upcoming weeks!"
+        "Over the summer of 2019, I interned on the Trip Platform, Search Intelligence team at Airbnb in San Francisco. During my time there I worked on developing a service using Java and Airflow aimed at serving datasets in-memory or off-heap to internal services. By far, the most interesting part of the project was propagating dataset updates to downstream subscribing services and ensuring no loss in uptime or consistency. I leveraged another internal tool to have my project support versioning, so dataset updates can be updated or reverted quickly and easily."
     ],
     CAPITAL_ONE: [
         'During summer 2018, I am fortunate enough to be working for Capital One as a software engineering intern. I’m currently working on a full-stack web application using React.js, Redux, Node.js, Express.js, and Python. My team is cross-functional, composed of designers, product managers, and engineers one the same team. We practice Agile development practices, mixing a combination of scrum and kanban boards. Some of the interesting aspects of my internship are developing new features that span across the entire tech stack and constantly iterating on the implementation until it’s scalable and understandable.'
@@ -30,6 +30,11 @@ export const Descriptions = {
 };
 
 export const Courses = {
+    FALL_2019_COURSES: [
+        'COS 418: Distributed Systems',
+        'COS 484: Natural Language Processing',
+        'COS 597B: Theoretical Deep Learning',
+    ],
     FALL_2018_COURSES: [
         'AEM 4550: Economics of Advertising',
         'AEM 4660: Computer Simulation & Modeling',
