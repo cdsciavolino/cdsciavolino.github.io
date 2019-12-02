@@ -67,7 +67,37 @@ export const SeasonMeta = {
         name: 'Fall 2016',
         priority: 1,
     },
-}
+};
+
+export const Tags = {
+    COURSES: 'Courses',
+    CLIENT_FACING: 'Client-facing Work',
+    DISTRIBUTED_SYSTEMS: 'Distributed Systems',
+    INTERNSHIPS: 'Internships',
+    LOVE_TALKING_ABOUT: 'Love Talking About',
+    MACHINE_LEARNING: 'Machine Learning',
+    PROJECTS: 'Projects',
+    RECENT: 'Recent',
+    WORKED_WITH_TEAM: 'Worked with a Team',
+};
+
+const containsTagFunc = tag => event => event.meta.tags.includes(tag);
+const maxPriority = Object.entries(SeasonMeta).reduce(
+  (curMax, [_, { priority }]) => priority > curMax ? priority : curMax
+)[1].priority;
+const NUM_SEASONS = 6;
+
+export const TagFilters = {
+    [Tags.COURSES]: event => event.meta.type === EventTypes.COURSEWORK,
+    [Tags.CLIENT_FACING]: containsTagFunc(Tags.CLIENT_FACING),
+    [Tags.DISTRIBUTED_SYSTEMS]: containsTagFunc(Tags.DISTRIBUTED_SYSTEMS),
+    [Tags.INTERNSHIPS]: event => event.meta.type === EventTypes.WORK_EXPERIENCE,
+    [Tags.LOVE_TALKING_ABOUT]: containsTagFunc(Tags.LOVE_TALKING_ABOUT),
+    [Tags.MACHINE_LEARNING]: containsTagFunc(Tags.MACHINE_LEARNING),
+    [Tags.PROJECTS]: event => event.meta.type === EventTypes.PROJECT,
+    [Tags.RECENT]: event => maxPriority - SeasonMeta[event.meta.season].priority < NUM_SEASONS,
+    [Tags.WORKED_WITH_TEAM]: containsTagFunc(Tags.WORKED_WITH_TEAM),
+};
 
 export const EventTypes = {
     COURSEWORK: 'Coursework',
@@ -101,7 +131,7 @@ const allEvents = [
         meta: {
             id: EventIds.FA19_COURSES,
             season: Seasons.FALL_2019,
-            tags: [],
+            tags: [Tags.MACHINE_LEARNING, Tags.DISTRIBUTED_SYSTEMS],
             type: EventTypes.COURSEWORK
         },
         data: {
@@ -116,7 +146,7 @@ const allEvents = [
         meta: {
             id: EventIds.AIRBNB,
             season: Seasons.SUMMER_2019,
-            tags: [],
+            tags: [Tags.LOVE_TALKING_ABOUT, Tags.WORKED_WITH_TEAM],
             type: EventTypes.WORK_EXPERIENCE
         },
         data: {
@@ -130,7 +160,7 @@ const allEvents = [
         meta: {
             id: EventIds.YELP,
             season: Seasons.SPRING_2019,
-            tags: [],
+            tags: [Tags.WORKED_WITH_TEAM, Tags.LOVE_TALKING_ABOUT, Tags.CLIENT_FACING],
             type: EventTypes.WORK_EXPERIENCE
         },
         data: {
@@ -159,7 +189,7 @@ const allEvents = [
         meta: {
             id: EventIds.SUN_APP,
             season: Seasons.FALL_2018,
-            tags: [],
+            tags: [Tags.CLIENT_FACING, Tags.WORKED_WITH_TEAM, Tags.LOVE_TALKING_ABOUT],
             type: EventTypes.PROJECT,
         },
         data: {
@@ -178,7 +208,7 @@ const allEvents = [
         meta: {
             id: EventIds.CORNELL_TEACHING,
             season: Seasons.FALL_2018,
-            tags: [],
+            tags: [Tags.LOVE_TALKING_ABOUT],
             type: EventTypes.WORK_EXPERIENCE
         },
         data: {
@@ -192,7 +222,7 @@ const allEvents = [
         meta: {
             id: EventIds.CAPITAL_ONE,
             season: Seasons.SUMMER_2018,
-            tags: [],
+            tags: [Tags.WORKED_WITH_TEAM],
             type: EventTypes.WORK_EXPERIENCE
         },
         data: {
@@ -206,7 +236,7 @@ const allEvents = [
         meta: {
             id: EventIds.SPOOFIFY,
             season: Seasons.SPRING_2018,
-            tags: [],
+            tags: [Tags.LOVE_TALKING_ABOUT, Tags.WORKED_WITH_TEAM, Tags.DISTRIBUTED_SYSTEMS, Tags.MACHINE_LEARNING],
             type: EventTypes.PROJECT,
         },
         data: {
@@ -223,7 +253,7 @@ const allEvents = [
         meta: {
             id: EventIds.SP18_COURSES,
             season: Seasons.SPRING_2018,
-            tags: [],
+            tags: [Tags.DISTRIBUTED_SYSTEMS, Tags.MACHINE_LEARNING],
             type: EventTypes.COURSEWORK,
         },
         data: {
@@ -238,7 +268,7 @@ const allEvents = [
         meta: {
             id: EventIds.FA17_COURSES,
             season: Seasons.FALL_2017,
-            tags: [],
+            tags: [Tags.MACHINE_LEARNING],
             type: EventTypes.COURSEWORK,
         },
         data: {
@@ -256,7 +286,7 @@ const allEvents = [
         meta: {
             id: EventIds.ARTICLE_CLASSIFIER,
             season: Seasons.FALL_2017,
-            tags: [],
+            tags: [Tags.MACHINE_LEARNING, Tags.WORKED_WITH_TEAM],
             type: EventTypes.PROJECT,
         },
         data: {
@@ -273,7 +303,7 @@ const allEvents = [
         meta: {
             id: EventIds.REDROUTE,
             season: Seasons.SUMMER_2017,
-            tags: [],
+            tags: [Tags.WORKED_WITH_TEAM, Tags.CLIENT_FACING],
             type: EventTypes.WORK_EXPERIENCE
         },
         data: {
@@ -287,7 +317,7 @@ const allEvents = [
         meta: {
             id: EventIds.SCIAVOTECH_LAUNCH,
             season: Seasons.SUMMER_2017,
-            tags: [],
+            tags: [Tags.CLIENT_FACING],
             type: EventTypes.WEBSITE_LAUNCH,
         },
         data: {
@@ -316,7 +346,7 @@ const allEvents = [
         meta: {
             id: EventIds.DRSCIAVOLINODAY_LAUNCH,
             season: Seasons.SPRING_2017,
-            tags: [],
+            tags: [Tags.CLIENT_FACING],
             type: EventTypes.WEBSITE_LAUNCH,
         },
         data: {
@@ -345,7 +375,7 @@ const allEvents = [
         meta: {
             id: EventIds.STRATEGO,
             season: Seasons.FALL_2016,
-            tags: [],
+            tags: [Tags.WORKED_WITH_TEAM],
             type: EventTypes.PROJECT,
         },
         data: {
