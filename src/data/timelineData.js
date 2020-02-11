@@ -14,6 +14,7 @@ import SunAppImage from '../images/cornell-sun-app-icon.png';
 import YelpIcon from '../images/yelp-logo.svg';
 
 export const Seasons = {
+    SPRING_2020: 'Spring 2020',
     FALL_2019: 'Fall 2019',
     SUMMER_2019: 'Summer 2019',
     SPRING_2019: 'Spring 2019',
@@ -27,6 +28,10 @@ export const Seasons = {
 };
 
 export const SeasonMeta = {
+    [Seasons.SPRING_2020]: {
+        name: 'Spring 2020',
+        priority: 11,
+    },
     [Seasons.FALL_2019]: {
         name: 'Fall 2019',
         priority: 10,
@@ -107,6 +112,7 @@ export const EventTypes = {
 };
 
 export const EventIds = {
+    SP20_COURSES: 'sp20_courses',
     FA19_COURSES: 'fa19_courses',
     AIRBNB: 'airbnb',
     YELP: 'yelp',
@@ -127,6 +133,21 @@ export const EventIds = {
 };
 
 const allEvents = [
+    {
+        meta: {
+            id: EventIds.SP20_COURSES,
+            season: Seasons.SPRING_2020,
+            tags: [Tags.MACHINE_LEARNING, Tags.DISTRIBUTED_SYSTEMS, Tags.COURSES],
+            type: EventTypes.COURSEWORK
+        },
+        data: {
+            courses: Courses.SPRING_2020_COURSES,
+            schoolIcon: PrincetonIcon,
+            schoolName: 'Princeton University',
+            semester: Seasons.SPRING_2020,
+            taPosition: ['COS 226: Data Structures and Algorithms'],
+        }
+    },
     {
         meta: {
             id: EventIds.FA19_COURSES,

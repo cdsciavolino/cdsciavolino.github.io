@@ -30,6 +30,10 @@ export const Descriptions = {
 };
 
 export const Courses = {
+    SPRING_2020_COURSES: [
+        'COS 598C: Deep Learning for Natural Language Processing',
+        'COS 598D: Systems and Machine Learning',
+    ],
     FALL_2019_COURSES: [
         'COS 418: Distributed Systems',
         'COS 484: Natural Language Processing',
