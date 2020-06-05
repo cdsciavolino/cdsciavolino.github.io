@@ -11,6 +11,9 @@ export const Descriptions = {
     CORNELL_TEACHING: [
         'Ever since spring of 2017, I’ve served on course staff for the Computing and Information Science Department at Cornell University. I love sparking interest in the field and teaching peers the ins and outs of computer science, as prior teaching assistants and professors have done for me.'
     ],
+    FACEBOOK: [
+        "I'm currently very fortunate to be interning at Facebook during the summer of 2020. I'm on the Search Community Quality and Explore team working on machine learning applications (intentionally vague). More to come in the future!"
+    ],
     REDROUTE: [
         "Over the summer of 2017, I worked with a development team on a call taking service for taxi dispatchers. The goal is to replace human call taking with an interactive voice response (IVR) system capable of understanding customer speech and converting calls into actionable requests dispatchers can satisfy. Two of the largest strides the company made during the summer was improved UX design (keeping interactions succinct) and accuracy (processing correct locations)."
     ],

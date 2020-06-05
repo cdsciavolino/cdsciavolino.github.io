@@ -5,6 +5,7 @@ import ArticleClassificationImage from '../images/classifier.jpg';
 import CapitalOneLogo from '../images/capitalone-logo.svg';
 import CornellIcon from '../images/cornell-logo.svg';
 import DrSciavolinoDayWebsiteImage from '../images/drsciavolinoday.jpg';
+import FacebookIcon from '../images/facebook-logo.svg';
 import PrincetonIcon from '../images/princeton-logo.svg';
 import RedRouteIcon from '../images/redroute-icon.png';
 import SciavotechWebsiteImage from '../images/sciavotech.jpg';
@@ -14,6 +15,7 @@ import SunAppImage from '../images/cornell-sun-app-icon.png';
 import YelpIcon from '../images/yelp-logo.svg';
 
 export const Seasons = {
+    SUMMER_2020: 'Summer 2020',
     SPRING_2020: 'Spring 2020',
     FALL_2019: 'Fall 2019',
     SUMMER_2019: 'Summer 2019',
@@ -28,6 +30,10 @@ export const Seasons = {
 };
 
 export const SeasonMeta = {
+    [Seasons.SUMMER_2020]: {
+        name: 'Summer 2020',
+        priority: 12,
+    },
     [Seasons.SPRING_2020]: {
         name: 'Spring 2020',
         priority: 11,
@@ -112,6 +118,7 @@ export const EventTypes = {
 };
 
 export const EventIds = {
+    FACEBOOK: 'facebook',
     SP20_COURSES: 'sp20_courses',
     FA19_COURSES: 'fa19_courses',
     AIRBNB: 'airbnb',
@@ -133,6 +140,20 @@ export const EventIds = {
 };
 
 const allEvents = [
+    {
+        meta: {
+            id: EventIds.FACEBOOK,
+            season: Seasons.SUMMER_2020,
+            tags: [Tags.MACHINE_LEARNING, Tags.INTERNSHIPS, Tags.WORKED_WITH_TEAM],
+            type: EventTypes.WORK_EXPERIENCE,
+        },
+        data: {
+            companyName: 'Facebook Inc.',
+            companyIcon: FacebookIcon,
+            description: Descriptions.FACEBOOK,
+            positionTitle: 'Software Engineering Intern'
+        }
+    },
     {
         meta: {
             id: EventIds.SP20_COURSES,
