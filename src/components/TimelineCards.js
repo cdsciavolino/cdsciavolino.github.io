@@ -2,11 +2,12 @@ import React from 'react';
 import { Divider, Timeline } from 'antd';
 
 import { SectionTitle } from './common/Typography';
-import {events, SeasonMeta, EventTypes, Tags, TagFilters} from '../data/timelineData';
+import { events, SeasonMeta, EventTypes, Tags, TagFilters } from '../data/timelineData';
 
 import Filter from './Filter';
-import ProjectCard from './ProjectCard';
 import NoFilterResults from './NoFilterResults';
+import PaperReleaseCard from "./PaperReleaseCard";
+import ProjectCard from './ProjectCard';
 import SemesterOverviewCard from './SemesterOverviewCard';
 import WebsiteLaunchCard from './WebsiteLaunchCard';
 import WorkExperienceCard from './WorkExperienceCard';
@@ -63,6 +64,8 @@ class TimelineCards extends React.Component {
                             switch (meta.type) {
                                 case EventTypes.COURSEWORK:
                                     return <SemesterOverviewCard key={meta.id} {...data} />;
+                                case EventTypes.PAPER:
+                                    return <PaperReleaseCard key={meta.id} {...data} />;
                                 case EventTypes.PROJECT:
                                     return <ProjectCard key={meta.id} {...data} />;
                                 case EventTypes.WEBSITE_LAUNCH:

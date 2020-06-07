@@ -17,6 +17,9 @@ export const Descriptions = {
     REDROUTE: [
         "Over the summer of 2017, I worked with a development team on a call taking service for taxi dispatchers. The goal is to replace human call taking with an interactive voice response (IVR) system capable of understanding customer speech and converting calls into actionable requests dispatchers can satisfy. Two of the largest strides the company made during the summer was improved UX design (keeping interactions succinct) and accuracy (processing correct locations)."
     ],
+    RL_SURVEY: [
+        "A survey of distributed training techniques and applications in reinforcement learning, including Asynchronous Advantage Actor Critic (A3C), Importance Weighted Actor-Learner Architecture, AlphaZero, and AlphaStar."
+    ],
     SPOOFIFY: [
         'As our final project in my Cloud Computing class, I collaborated with another student to create a scalable music streaming and recommendation service. Although the primary focus of the project was scalability, we also created a machine learning model to produce music recommendations for each individual user. We leveraged Spotify’s developers API to allows the user to actively stream music and generate feature vectors for each song. The application uses Node.js, Express.js, ml.js, and JSX and was hosted for testing purposes using Amazon Lightsail and DynamoDB.'
     ],

@@ -8,6 +8,8 @@ import DrSciavolinoDayWebsiteImage from '../images/drsciavolinoday.jpg';
 import FacebookIcon from '../images/facebook-logo.svg';
 import PrincetonIcon from '../images/princeton-logo.svg';
 import RedRouteIcon from '../images/redroute-icon.png';
+import RLSurveyPaperPdf from '../assets/RL_Training_Survey.pdf';
+import RLSurveyPaperImg from '../images/rl-survey-paper.jpg';
 import SciavotechWebsiteImage from '../images/sciavotech.jpg';
 import SpoofifyIcon from '../images/spoofify.png';
 import StrategoImage from '../images/stratego-gameplay.jpg';
@@ -87,6 +89,7 @@ export const Tags = {
     INTERNSHIPS: 'Internships',
     LOVE_TALKING_ABOUT: 'Love Talking About',
     MACHINE_LEARNING: 'Machine Learning',
+    PAPER: 'Papers',
     PROJECTS: 'Projects',
     RECENT: 'Recent',
     WORKED_WITH_TEAM: 'Worked with a Team',
@@ -105,6 +108,7 @@ export const TagFilters = {
     [Tags.INTERNSHIPS]: event => event.meta.type === EventTypes.WORK_EXPERIENCE,
     [Tags.LOVE_TALKING_ABOUT]: containsTagFunc(Tags.LOVE_TALKING_ABOUT),
     [Tags.MACHINE_LEARNING]: containsTagFunc(Tags.MACHINE_LEARNING),
+    [Tags.PAPER]: event => event.meta.type === EventTypes.PAPER,
     [Tags.PROJECTS]: event => event.meta.type === EventTypes.PROJECT,
     [Tags.RECENT]: event => maxPriority - SeasonMeta[event.meta.season].priority < NUM_SEASONS,
     [Tags.WORKED_WITH_TEAM]: containsTagFunc(Tags.WORKED_WITH_TEAM),
@@ -112,6 +116,7 @@ export const TagFilters = {
 
 export const EventTypes = {
     COURSEWORK: 'Coursework',
+    PAPER: 'Paper',
     PROJECT: 'Project',
     WEBSITE_LAUNCH: 'Website Launch',
     WORK_EXPERIENCE: 'Work Experience',
@@ -119,6 +124,7 @@ export const EventTypes = {
 
 export const EventIds = {
     FACEBOOK: 'facebook',
+    RL_SURVEY: 'rl_survey',
     SP20_COURSES: 'sp20_courses',
     FA19_COURSES: 'fa19_courses',
     AIRBNB: 'airbnb',
@@ -152,6 +158,20 @@ const allEvents = [
             companyIcon: FacebookIcon,
             description: Descriptions.FACEBOOK,
             positionTitle: 'Software Engineering Intern'
+        }
+    },
+    {
+        meta: {
+            id: EventIds.RL_SURVEY,
+            season: Seasons.SPRING_2020,
+            tags: [Tags.MACHINE_LEARNING, Tags.COURSES],
+            type: EventTypes.PAPER
+        },
+        data: {
+            paperTitle: 'Distributed Training for Reinforcement Learning',
+            paperDescription: Descriptions.RL_SURVEY,
+            paperUrl: RLSurveyPaperPdf,
+            paperImg: RLSurveyPaperImg,
         }
     },
     {
