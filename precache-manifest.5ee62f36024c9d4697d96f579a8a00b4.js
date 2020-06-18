@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c3d7f646013bb4728067519a33dd2c8c",
+    "revision": "bcae5a1a9241575a690041f0d1fba83a",
     "url": "/index.html"
   },
   {
-    "revision": "8625fa9886bb10cf7b57",
+    "revision": "e5d26d8641e96e1cd4b8",
     "url": "/static/css/2.81187608.chunk.css"
   },
   {
-    "revision": "c28eaf64ea55488c562b",
+    "revision": "2ebaf0a916c92216ab90",
     "url": "/static/css/main.fc4fe54c.chunk.css"
   },
   {
-    "revision": "8625fa9886bb10cf7b57",
-    "url": "/static/js/2.052d725c.chunk.js"
+    "revision": "e5d26d8641e96e1cd4b8",
+    "url": "/static/js/2.3424d79d.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/static/js/2.052d725c.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.3424d79d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c28eaf64ea55488c562b",
-    "url": "/static/js/main.190206b3.chunk.js"
+    "revision": "2ebaf0a916c92216ab90",
+    "url": "/static/js/main.83d0b84f.chunk.js"
   },
   {
     "revision": "74238a5a256b2bbf3ad0",
@@ -30,6 +30,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "78da56b4061114d66b2c489bdd6799d8",
     "url": "/static/media/ChrisSciavolinoResume.78da56b4.pdf"
+  },
+  {
+    "revision": "9e8489c7c6eafa4c2beb10fc23929494",
+    "url": "/static/media/Open_QA_Survey.9e8489c7.pdf"
   },
   {
     "revision": "38be557f5db705990e67878fc92fd277",
@@ -76,6 +80,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/linkedin.e1613418.svg"
   },
   {
+    "revision": "f4c13a09c784c164d5e853b1e93e05fb",
+    "url": "/static/media/openqa-survey-paper.f4c13a09.jpg"
+  },
+  {
     "revision": "1210c96293bb8ec5ae79158beed732bd",
     "url": "/static/media/princeton-logo.1210c962.svg"
   },
@@ -92,8 +100,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/resume.b54f2ecb.svg"
   },
   {
-    "revision": "e2b7f41ad3c56110d8bca61bf52c8303",
-    "url": "/static/media/rl-survey-paper.e2b7f41a.jpg"
+    "revision": "480da5bcae451de6cd4a50b9e6fba751",
+    "url": "/static/media/rl-survey-paper.480da5bc.jpg"
   },
   {
     "revision": "006e0031a5e2681c796b0e779fbc3877",
