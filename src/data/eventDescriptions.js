@@ -14,6 +14,9 @@ export const Descriptions = {
     FACEBOOK: [
         "I'm currently very fortunate to be interning at Facebook during the summer of 2020. I'm on the Search Community Quality and Explore team working on machine learning applications (intentionally vague). More to come in the future!"
     ],
+    OPEN_QA_SURVEY: [
+        "A survey of recent open-domain question answering (OpenQA) models as well as a breakdown of different directions the field has explored to solve the problem."
+    ],
     REDROUTE: [
         "Over the summer of 2017, I worked with a development team on a call taking service for taxi dispatchers. The goal is to replace human call taking with an interactive voice response (IVR) system capable of understanding customer speech and converting calls into actionable requests dispatchers can satisfy. Two of the largest strides the company made during the summer was improved UX design (keeping interactions succinct) and accuracy (processing correct locations)."
     ],

@@ -6,6 +6,8 @@ import CapitalOneLogo from '../images/capitalone-logo.svg';
 import CornellIcon from '../images/cornell-logo.svg';
 import DrSciavolinoDayWebsiteImage from '../images/drsciavolinoday.jpg';
 import FacebookIcon from '../images/facebook-logo.svg';
+import OpenQaPaperPdf from '../assets/Open_QA_Survey.pdf';
+import OpenQaPaperImg from '../images/openqa-survey-paper.jpg';
 import PrincetonIcon from '../images/princeton-logo.svg';
 import RedRouteIcon from '../images/redroute-icon.png';
 import RLSurveyPaperPdf from '../assets/RL_Training_Survey.pdf';
@@ -124,6 +126,7 @@ export const EventTypes = {
 
 export const EventIds = {
     FACEBOOK: 'facebook',
+    OPEN_QA_SURVEY: 'open-qa-survey',
     RL_SURVEY: 'rl_survey',
     SP20_COURSES: 'sp20_courses',
     FA19_COURSES: 'fa19_courses',
@@ -158,6 +161,20 @@ const allEvents = [
             companyIcon: FacebookIcon,
             description: Descriptions.FACEBOOK,
             positionTitle: 'Software Engineering Intern'
+        }
+    },
+    {
+        meta: {
+            id: EventIds.OPEN_QA_SURVEY,
+            season: Seasons.SPRING_2020,
+            tags: [Tags.MACHINE_LEARNING, Tags.COURSES, Tags.LOVE_TALKING_ABOUT],
+            type: EventTypes.PAPER
+        },
+        data: {
+            paperTitle: "Q: What's Open-Domain Question Answering? A:",
+            paperDescription: Descriptions.OPEN_QA_SURVEY,
+            paperUrl: OpenQaPaperPdf,
+            paperImg: OpenQaPaperImg
         }
     },
     {
