@@ -12,7 +12,7 @@ export const Descriptions = {
         'Ever since spring of 2017, I’ve served on course staff for the Computing and Information Science Department at Cornell University. I love sparking interest in the field and teaching peers the ins and outs of computer science, as prior teaching assistants and professors have done for me.'
     ],
     FACEBOOK: [
-        "I'm currently very fortunate to be interning at Facebook during the summer of 2020. I'm on the Search Community Quality and Explore team working on machine learning applications (intentionally vague). More to come in the future!"
+        "I was very fortunate to intern remotely with Facebook during the summer of 2020. I joined the Search Community Quality & Explore team and worked on iterating a recommendation model within search. I started by building a DAG-based data pipeline to generate the desired features using Presto and SparkSQL. Once I had the features, I trained, tested, and evaluated the new recommendation model offline to validate its performance. After I found a model configuration that performed well, I made changes to the production inference layer and ran an experiment online to verify its efficacy. I spent a lot of time playing with data, building PyTorch models, and collaborating with others."
     ],
     OPEN_QA_SURVEY: [
         "A survey of recent open-domain question answering (OpenQA) models as well as a breakdown of different directions the field has explored to solve the problem."
