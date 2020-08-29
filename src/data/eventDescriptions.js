@@ -39,6 +39,9 @@ export const Descriptions = {
 };
 
 export const Courses = {
+    FALL_2020_COURSES: [
+        'Full-time Research in Natural Language Processing (Open-domain Question Answering)',
+    ],
     SPRING_2020_COURSES: [
         'COS 598C: Deep Learning for Natural Language Processing',
         'COS 598D: Systems and Machine Learning',

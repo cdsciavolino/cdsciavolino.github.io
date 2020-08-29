@@ -19,6 +19,7 @@ import SunAppImage from '../images/cornell-sun-app-icon.png';
 import YelpIcon from '../images/yelp-logo.svg';
 
 export const Seasons = {
+    FALL_2020: 'Fall 2020',
     SUMMER_2020: 'Summer 2020',
     SPRING_2020: 'Spring 2020',
     FALL_2019: 'Fall 2019',
@@ -34,6 +35,10 @@ export const Seasons = {
 };
 
 export const SeasonMeta = {
+    [Seasons.FALL_2020]: {
+        name: 'Fall 2020',
+        priority: 13,
+    },
     [Seasons.SUMMER_2020]: {
         name: 'Summer 2020',
         priority: 12,
@@ -94,6 +99,7 @@ export const Tags = {
     PAPER: 'Papers',
     PROJECTS: 'Projects',
     RECENT: 'Recent',
+    RESEARCH: 'Research',
     WORKED_WITH_TEAM: 'Worked with a Team',
 };
 
@@ -113,6 +119,7 @@ export const TagFilters = {
     [Tags.PAPER]: event => event.meta.type === EventTypes.PAPER,
     [Tags.PROJECTS]: event => event.meta.type === EventTypes.PROJECT,
     [Tags.RECENT]: event => maxPriority - SeasonMeta[event.meta.season].priority < NUM_SEASONS,
+    [Tags.RESEARCH]: event => containsTagFunc(Tags.RESEARCH),
     [Tags.WORKED_WITH_TEAM]: containsTagFunc(Tags.WORKED_WITH_TEAM),
 };
 
@@ -125,6 +132,7 @@ export const EventTypes = {
 };
 
 export const EventIds = {
+    FA20_COURSES: 'fa20_courses',
     FACEBOOK: 'facebook',
     OPEN_QA_SURVEY: 'open-qa-survey',
     RL_SURVEY: 'rl_survey',
@@ -149,6 +157,21 @@ export const EventIds = {
 };
 
 const allEvents = [
+    {
+        meta: {
+            id: EventIds.FA20_COURSES,
+            season: Seasons.FALL_2020,
+            tags: [Tags.MACHINE_LEARNING, Tags.COURSES, Tags.RESEARCH],
+            type: EventTypes.COURSEWORK
+        },
+        data: {
+            courses: Courses.FALL_2020_COURSES,
+            schoolIcon: PrincetonIcon,
+            schoolName: 'Princeton University',
+            semester: Seasons.FALL_2020,
+            taPosition: ['COS 226: Data Structures and Algorithms'],
+        }
+    },
     {
         meta: {
             id: EventIds.FACEBOOK,
