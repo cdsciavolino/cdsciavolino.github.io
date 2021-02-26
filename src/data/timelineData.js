@@ -19,6 +19,7 @@ import SunAppImage from '../images/cornell-sun-app-icon.png';
 import YelpIcon from '../images/yelp-logo.svg';
 
 export const Seasons = {
+    SPRING_2021: 'Spring 2021',
     FALL_2020: 'Fall 2020',
     SUMMER_2020: 'Summer 2020',
     SPRING_2020: 'Spring 2020',
@@ -35,6 +36,10 @@ export const Seasons = {
 };
 
 export const SeasonMeta = {
+    [Seasons.SPRING_2021]: {
+        name: 'Spring 2021',
+        priority: 14,
+    },
     [Seasons.FALL_2020]: {
         name: 'Fall 2020',
         priority: 13,
@@ -132,6 +137,7 @@ export const EventTypes = {
 };
 
 export const EventIds = {
+    SP21_COURSES: 'sp21_courses',
     FA20_COURSES: 'fa20_courses',
     FACEBOOK: 'facebook',
     OPEN_QA_SURVEY: 'open-qa-survey',
@@ -157,6 +163,21 @@ export const EventIds = {
 };
 
 const allEvents = [
+    {
+        meta: {
+            id: EventIds.SP21_COURSES,
+            season: Seasons.SPRING_2021,
+            tags: [Tags.MACHINE_LEARNING, Tags.COURSES, Tags.RESEARCH],
+            type: EventTypes.COURSEWORK,
+        },
+        data: {
+            courses: Courses.SPRING_2021_COURSES,
+            schoolIcon: PrincetonIcon,
+            schoolName: 'Princeton University',
+            semester: Seasons.SPRING_2021,
+            taPosition: ['COS 484/584: (Advanced) Natural Language Processing'],
+        }
+    },
     {
         meta: {
             id: EventIds.FA20_COURSES,

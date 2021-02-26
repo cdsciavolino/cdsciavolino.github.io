@@ -39,6 +39,10 @@ export const Descriptions = {
 };
 
 export const Courses = {
+    SPRING_2021_COURSES: [
+        'COS 432: Information Security',
+        'Research in Natural Language Processing (Open-domain Question Answering)',
+    ],
     FALL_2020_COURSES: [
         'Full-time Research in Natural Language Processing (Open-domain Question Answering)',
     ],
