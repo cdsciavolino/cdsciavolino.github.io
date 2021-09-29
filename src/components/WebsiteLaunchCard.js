@@ -25,7 +25,7 @@ const WebsiteLaunchCard = ({ websiteCompany, websiteLaunchDate, websiteUrl, webs
                         cover={
                               <Image src={websiteImage} alt={websiteCompany + ' Homepage'}/>
                         }
-                        bordered
+                        bordered={false}
                         hoverable
                     />
                 </a>

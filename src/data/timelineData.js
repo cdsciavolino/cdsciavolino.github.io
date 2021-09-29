@@ -5,7 +5,10 @@ import ArticleClassificationImage from '../images/classifier.jpg';
 import CapitalOneLogo from '../images/capitalone-logo.svg';
 import CornellIcon from '../images/cornell-logo.svg';
 import DrSciavolinoDayWebsiteImage from '../images/drsciavolinoday.jpg';
+import EntityQuestionsPaper from '../images/EntityQuestions.png';
 import FacebookIcon from '../images/facebook-logo.svg';
+import JaneStreetIcon from '../images/jane-street-logo.svg'
+import MastersThesis from '../images/MastersThesis.png';
 import OpenQaPaperPdf from '../assets/Open_QA_Survey.pdf';
 import OpenQaPaperImg from '../images/openqa-survey-paper.jpg';
 import PrincetonIcon from '../images/princeton-logo.svg';
@@ -19,6 +22,7 @@ import SunAppImage from '../images/cornell-sun-app-icon.png';
 import YelpIcon from '../images/yelp-logo.svg';
 
 export const Seasons = {
+    FALL_2021: "Fall 2021",
     SPRING_2021: 'Spring 2021',
     FALL_2020: 'Fall 2020',
     SUMMER_2020: 'Summer 2020',
@@ -36,6 +40,10 @@ export const Seasons = {
 };
 
 export const SeasonMeta = {
+    [Seasons.FALL_2021]: {
+        name: "Fall 2021",
+        priority: 15
+    },
     [Seasons.SPRING_2021]: {
         name: 'Spring 2021',
         priority: 14,
@@ -137,6 +145,9 @@ export const EventTypes = {
 };
 
 export const EventIds = {
+    JANE_STREET: 'jane_street',
+    ENTITYQ_PAPER: 'entityq_paper',
+    MASTERS_THESIS: 'masters_thesis',
     SP21_COURSES: 'sp21_courses',
     FA20_COURSES: 'fa20_courses',
     FACEBOOK: 'facebook',
@@ -163,6 +174,50 @@ export const EventIds = {
 };
 
 const allEvents = [
+    {
+        meta: {
+            id: EventIds.JANE_STREET,
+            season: Seasons.FALL_2021,
+            tags: [Tags.WORKED_WITH_TEAM],
+            type: EventTypes.WORK_EXPERIENCE
+        },
+        data: {
+            companyName: 'Jane Street',
+            companyIcon: JaneStreetIcon,
+            description: Descriptions.JANE_STREET,
+            positionTitle: 'Software Engineer'
+        }
+    },
+    {
+        meta: {
+            id: EventIds.ENTITYQ_PAPER,
+            season: Seasons.SPRING_2021,
+            tags: [Tags.MACHINE_LEARNING, Tags.RESEARCH, Tags.PAPER],
+            type: EventTypes.PAPER,
+        },
+        data: {
+            ctaLinks: { "Read Paper": "https://arxiv.org/abs/2109.08535", "View GitHub": "https://github.com/princeton-nlp/EntityQuestions" },
+            paperTitle: "Simple Entity-centric Questions Challenge Dense Retrievers",
+            paperDescription: Descriptions.ENTITYQ_PAPER,
+            paperUrl: "https://arxiv.org/abs/2109.08535",
+            paperImg: EntityQuestionsPaper
+        }
+    },
+    {
+        meta: {
+            id: EventIds.MASTERS_THESIS,
+            season: Seasons.SPRING_2021,
+            tags: [Tags.MACHINE_LEARNING, Tags.RESEARCH, Tags.PAPER],
+            type: EventTypes.PAPER,
+        }, 
+        data: {
+            ctaLinks: { "Read Paper": "https://arxiv.org/abs/2109.11085 " },
+            paperTitle: "Towards Universal Dense Retrieval for Open-domain Question Answering",
+            paperDescription: Descriptions.MASTERS_THESIS,
+            paperUrl: "https://arxiv.org/abs/2109.11085",
+            paperImg: MastersThesis
+        }
+    },
     {
         meta: {
             id: EventIds.SP21_COURSES,
@@ -215,6 +270,7 @@ const allEvents = [
             type: EventTypes.PAPER
         },
         data: {
+            ctaLinks: {},
             paperTitle: "Q: What's Open-Domain Question Answering? A:",
             paperDescription: Descriptions.OPEN_QA_SURVEY,
             paperUrl: OpenQaPaperPdf,
@@ -229,6 +285,7 @@ const allEvents = [
             type: EventTypes.PAPER
         },
         data: {
+            ctaLinks: {},
             paperTitle: 'Distributed Training for Reinforcement Learning',
             paperDescription: Descriptions.RL_SURVEY,
             paperUrl: RLSurveyPaperPdf,

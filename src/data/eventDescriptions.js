@@ -11,8 +11,18 @@ export const Descriptions = {
     CORNELL_TEACHING: [
         'Ever since spring of 2017, I’ve served on course staff for the Computing and Information Science Department at Cornell University. I love sparking interest in the field and teaching peers the ins and outs of computer science, as prior teaching assistants and professors have done for me.'
     ],
+    ENTITYQ_PAPER: [
+        "Short paper of a new evaluation benchmark for retrieval models focusing on simple entity-centric questions. We demonstrate that dense models exhibit popularity bias and still lag behind sparse models when it comes to generalization. We explore and outline potential avenues for future investigation.",
+        "To appear in EMNLP 2021.",
+    ],
     FACEBOOK: [
         "I was very fortunate to intern remotely with Facebook during the summer of 2020. I joined the Search Community Quality & Explore team and worked on iterating a recommendation model within search. I started by building a DAG-based data pipeline to generate the desired features using Presto and SparkSQL. Once I had the features, I trained, tested, and evaluated the new recommendation model offline to validate its performance. After I found a model configuration that performed well, I made changes to the production inference layer and ran an experiment online to verify its efficacy. I spent a lot of time playing with data, building PyTorch models, and collaborating with others."
+    ],
+    JANE_STREET:[
+        "Started in Fall 2021 as a full-time software engineer."
+    ],
+    MASTERS_THESIS: [
+        "A thesis based on the research done during my master's degree. Focuses on robustness of dense retrieval models for open-domain question answering and highlights some shortcomings we discovered."
     ],
     OPEN_QA_SURVEY: [
         "A survey of recent open-domain question answering (OpenQA) models as well as a breakdown of different directions the field has explored to solve the problem."
